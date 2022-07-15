@@ -1,22 +1,15 @@
 package com.example.talancantine
 
-import android.app.Activity
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.graphics.Bitmap
-import android.graphics.ImageDecoder
 import android.net.Uri
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
 import android.widget.*
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class FirstActivity : AppCompatActivity() {
 
     lateinit var imageView: ImageView
     lateinit var button: Button
@@ -37,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                     Toast.makeText(
-                        this@MainActivity,
+                        this@FirstActivity,
                         getString(R.string.selected_item) + " " +
                                 "" + categories[p2], Toast.LENGTH_SHORT
                     ).show()
