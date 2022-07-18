@@ -3,11 +3,9 @@ import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.os.Bundle
 import android.view.View
-import android.widget.CalendarView
-import android.widget.DatePicker
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.textfield.TextInputLayout
 import kotlinx.android.synthetic.main.activity_second.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -18,6 +16,7 @@ class SecondActivity : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
 
     var formatDate= SimpleDateFormat("dd MMMM YYYY",Locale.US)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +40,11 @@ class SecondActivity : AppCompatActivity() {
             }, getDate.get(Calendar.YEAR), getDate.get(Calendar.MONTH), getDate.get(Calendar.DAY_OF_MONTH))
             datepicker.show()
         })
-    }
+
+
+
+
+
+        }
 }
 

@@ -31,7 +31,7 @@ class FirstActivity : AppCompatActivity() {
                 override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                     Toast.makeText(
                         this@FirstActivity,
-                        getString(R.string.selected_item) + " " +
+                        getString(R.string.selected_item1) + " " +
                                 "" + categories[p2], Toast.LENGTH_SHORT
                     ).show()
                 }

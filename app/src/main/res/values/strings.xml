@@ -1,11 +1,26 @@
 <resources>
     <string name="app_name">TalanCantine</string>
     <string name="cr_ation_de_plat">Création de plat</string>
-    <string name="selected_item">Selected item:</string>
+    <string name="selected_item1">Selected item:</string>
     <string-array name="categories">
         <item>Entrée</item>
         <item>Plat principal</item>
         <item>Dessert</item>
     </string-array>
-
+    <string name="selected_item2">Selected item:</string>
+    <string-array name="Entree">
+        <item> Entrée 1 </item>
+        <item> Entrée 2 </item>
+        <item> Entrée 3</item>
+    </string-array>
+    <string-array name="Plat">
+        <item> Plat 1 </item>
+        <item> Plat 2 </item>
+        <item> Plat 3</item>
+    </string-array>
+    <string-array name="Desserts">
+        <item> Dessert 1 </item>
+        <item> Dessert 2 </item>
+        <item> Dessert 3</item>
+    </string-array>
 </resources>
