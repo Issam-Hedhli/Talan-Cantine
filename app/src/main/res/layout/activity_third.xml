@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#CECECE"
+        android:backgroundTint="#F2F2F2"
+        android:gravity="center"
+        android:text="Gestion des menus du jour"
+        android:textColor="#0C0505"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+
+        <Button
+            android:id="@+id/button_date_picked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Choisir la date du menu"
+            android:textColor="@color/purple_500"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:id="@+id/txt_view_date_picked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/ic_calendar"
+            android:drawablePadding="50dp"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint=" DD/MM/YYYY"
+            android:inputType="text|number"
+            android:paddingBottom="40dp"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:gravity="right"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonValidermenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="Modifier"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

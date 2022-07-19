@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".SecondActivity">
+    tools:context=".FourthActivity"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:background="#CECECE"
         android:backgroundTint="#F2F2F2"
         android:gravity="center"
-        android:text="Création de menu du jour"
+        android:text="Modification du menu du jour"
         android:textColor="#0C0505"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -53,7 +53,6 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,7 +66,7 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:padding="20dp"
-            android:text="Créer le menu"
+            android:text="Gérer le menu"
             android:textColor="@color/purple_200"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -81,22 +80,20 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Choisir les entrées"
-        android:textColor="@color/black"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="30dp"
-        app:helperText="required"
-        app:helperTextTextColor="@android:color/holo_red_dark"
-
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-
-        <AutoCompleteTextView
-            android:id="@+id/dropdown_field_entree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none" />
+            android:hint="Choisir les entrées"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_field_entree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -107,8 +104,6 @@
             android:hint="Choisir les plats"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="30dp"
-            app:helperText="required"
-            app:helperTextTextColor="@android:color/holo_red_dark"
 
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
@@ -126,9 +121,6 @@
             android:hint="Choisir les desserts"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="30dp"
-            app:helperText="required"
-            app:helperTextTextColor="@android:color/holo_red_dark"
-
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
             <AutoCompleteTextView
@@ -156,5 +148,6 @@
             android:text="Valider"
             android:textStyle="bold" />
     </LinearLayout>
+
 
 </LinearLayout>

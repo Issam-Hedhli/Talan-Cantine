@@ -7,20 +7,9 @@
         <item>Plat principal</item>
         <item>Dessert</item>
     </string-array>
-    <string name="selected_item2">Selected item:</string>
-    <string-array name="Entree">
-        <item> Entrée 1 </item>
-        <item> Entrée 2 </item>
-        <item> Entrée 3</item>
-    </string-array>
-    <string-array name="Plat">
-        <item> Plat 1 </item>
-        <item> Plat 2 </item>
-        <item> Plat 3</item>
-    </string-array>
-    <string-array name="Desserts">
-        <item> Dessert 1 </item>
-        <item> Dessert 2 </item>
-        <item> Dessert 3</item>
+    <string-array name="types_entrees">
+        <item>Entrée1</item>
+        <item>Entrée2</item>
+        <item>Entrée3</item>
     </string-array>
 </resources>

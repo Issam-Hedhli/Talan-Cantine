@@ -5,11 +5,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewbinding.ViewBinding
+import com.example.talancantine.databinding.ActivityMainBinding
+import com.example.talancantine.databinding.ActivitySecondBinding
 import com.google.android.material.textfield.TextInputLayout
 import kotlinx.android.synthetic.main.activity_second.*
 import java.text.SimpleDateFormat
 import java.util.*
-
 
 class SecondActivity : AppCompatActivity() {
 
@@ -21,6 +23,7 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
+
 
 
         // date de la creation de menu du jour
@@ -41,10 +44,22 @@ class SecondActivity : AppCompatActivity() {
             datepicker.show()
         })
 
-
-
-
-
         }
+
+    //choisir les entrées
+
+    private lateinit var binding: ActivitySecondBinding
+    fun menus(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding= ActivitySecondBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val items1 = resources.getStringArray(R.array.types_entrees)
+        val adapter = ArrayAdapter(this,R.layout.list_items,items1)
+        with(binding) {
+            dropdown_field_entree.setAdapter(adapter)
+        }
+
+    }
 }
 
