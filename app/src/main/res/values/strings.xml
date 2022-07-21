@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TalanCantine</string>
+    <string name="app_name">Talan Cantine</string>
     <string name="cr_ation_de_plat">Création de plat</string>
     <string name="selected_item1">Selected item:</string>
     <string-array name="categories">
@@ -12,4 +12,5 @@
         <item>Entrée2</item>
         <item>Entrée3</item>
     </string-array>
+    <string name="slogan">Good food = Good Mood</string>
 </resources>
