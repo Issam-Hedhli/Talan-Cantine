@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".FirstActivity"
+    tools:visibility="visible">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#CECECE"
+        android:gravity="center"
+        android:text="Création de plat"
+        android:textColor="#0C0505"
+        android:backgroundTint="#F2F2F2"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="30dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="20dp"
+            android:text="Ajouter le titre du plat"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titre_plat_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_marginHorizontal="20dp"
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/titre_plat"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:hint="Titre du plat"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="459dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Séléctionner une catégorie"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+        <Spinner
+            android:id="@+id/spinner_categorie"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            android:spinnerMode="dropdown"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Ajouter une image "
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/buttonAjouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:text="Ajouter"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imagePlat"
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonValiderplat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:text="Valider"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
