@@ -1,6 +1,8 @@
 package com.example.talancantine
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.SurfaceControl
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -21,6 +23,7 @@ class AdminInterface : AppCompatActivity() {
             when (position) {
                 0 -> {
                     tab.text = "Création de plat"
+
                 }
                 1 -> {
                     tab.text = "Création du menu"
@@ -37,7 +40,13 @@ class AdminInterface : AppCompatActivity() {
 
 
 
-
     }
 
-    }
+            }
+
+
+
+
+
+
+
